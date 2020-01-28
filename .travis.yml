@@ -6,6 +6,7 @@ install:
   - pip install --pre -e '.[dev]'
 script:
   - pytest
+  - python setup.py sdist
 
 stages:
   - pre-commit hooks
